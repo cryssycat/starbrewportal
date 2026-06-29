@@ -1,7 +1,7 @@
 const hubs = [
 {
  title:"StarHub",
- image:"images/banner.png",
+ image:"images/starhub.png",
  icon:"⭐",
  category:"Characters",
  description:"Star's character collection.",
@@ -10,6 +10,7 @@ const hubs = [
 },
 {
  title:"LunaHub",
+ image:"images/lunahub.png",
  icon:"🌙",
  category:"Characters",
  description:"Luna's character collection.",
