@@ -68,13 +68,41 @@ categories.forEach(cat=>{
  hubs.filter(h=>h.category===cat).forEach(h=>{
    const card=document.createElement("div");
    card.className="card";
-   card.innerHTML=`
-     <div class="icon">${h.icon}</div>
-     <h3>${h.title}</h3>
-     <div class="desc">${h.description}</div>
-     <span class="badge">${h.status}</span>
-     <a class="open" href="${h.url}">Open</a>
-   `;
+card.innerHTML = `
+
+<div class="card-image">
+
+    <img src="${h.image}" alt="${h.title}">
+
+</div>
+
+<div class="icon">
+
+    ${h.icon}
+
+</div>
+
+<h3>${h.title}</h3>
+
+<div class="desc">
+
+    ${h.description}
+
+</div>
+
+<span class="badge">
+
+    ${h.status}
+
+</span>
+
+<a class="open" href="${h.url}">
+
+    Open
+
+</a>
+
+`;
    grid.appendChild(card);
  });
  container.appendChild(section);
