@@ -391,3 +391,59 @@ body::after{
     z-index:-1;
 
 }
+
+
+.card{
+
+    overflow:hidden;
+
+}
+
+.card-image{
+
+    margin:
+
+        -22px
+        -22px
+        18px;
+
+    height:115px;
+
+    overflow:hidden;
+
+}
+.card-image{
+
+    position:relative;
+
+}
+    
+.icon{
+
+    position:absolute;
+
+    top:12px;
+
+    right:12px;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+
+        rgba(15,25,55,.8);
+
+    backdrop-filter:blur(12px);
+
+    font-size:1.4rem;
+
+}
