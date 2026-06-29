@@ -75,3 +75,9 @@ body{
  padding:20px;
 }
 code{color:#ffdca8}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
