@@ -1,72 +1,75 @@
+
 :root{
 
-    --card-bg: rgba(185, 205, 225, .08);
-    --card-border: rgba(220, 230, 240, .22);
-    --card-shadow: 0 14px 36px rgba(0,0,0,.30);
+    --card-bg: rgba(18,32,66,.58);
+    --card-bg-soft: rgba(28,45,86,.40);
 
-    --accent-color: #cfd8e8;
-    --accent-hover: #e6edf7;
+    --card-border: rgba(210,225,255,.18);
+    --card-shadow: 0 16px 42px rgba(0,0,0,.40);
 
-    --text: #f3f7fc;
-    --text-soft: #c6d3df;
+    --accent-color:#d7e6ff;
+    --accent-hover:#eef5ff;
+
+    --text:#f8fbff;
+    --text-soft:#c4d3ef;
 
 }
 
 *{
+    margin:0;
+    padding:0;
     box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
 
-    margin:0;
-    padding:32px;
-
     font-family:Inter,Arial,sans-serif;
-
     color:var(--text);
 
+    padding:32px;
+
     background:
-        linear-gradient(
-            135deg,
-            #344760,
-            #253449,
-            #1a2334
-        );
+        radial-gradient(circle at top,#4f6db7 0%,#223b72 30%,#15264b 65%,#091121 100%);
 
     background-attachment:fixed;
 
 }
 
-/* -------------------------------- */
-/* Glass Cards */
-/* -------------------------------- */
+/* -------------------------- */
+/* Glass */
+/* -------------------------- */
 
 .hero,
 .glass{
 
     position:relative;
-
     overflow:hidden;
 
     background:var(--card-bg);
 
     border:1px solid var(--card-border);
 
-    backdrop-filter:blur(20px);
+    backdrop-filter:blur(22px);
 
-    border-radius:24px;
+    border-radius:26px;
 
     box-shadow:var(--card-shadow);
 
 }
 
+/* -------------------------- */
+/* Hero */
+/* -------------------------- */
+
 .hero{
 
+    padding:90px 40px;
     text-align:center;
-
-    padding:70px 30px;
-
-    margin-bottom:40px;
+    margin-bottom:45px;
 
 }
 
@@ -75,21 +78,18 @@ body{
     content:"";
 
     position:absolute;
-
     inset:0;
 
     background:
-
         linear-gradient(
-            rgba(20,32,48,.35),
-            rgba(20,32,48,.70)
+            rgba(9,17,33,.30),
+            rgba(9,17,33,.72)
         ),
-
         url("images/banner.png")
         center/cover
         no-repeat;
 
-    opacity:.85;
+    opacity:.95;
 
     z-index:0;
 
@@ -98,26 +98,28 @@ body{
 .hero>*{
 
     position:relative;
-
-    z-index:1;
+    z-index:2;
 
 }
 
 .hero h1{
 
-    font-size:3rem;
+    font-size:3.2rem;
+    margin-bottom:15px;
 
-    margin-bottom:12px;
+    text-shadow:
+        0 0 15px rgba(255,255,255,.15);
 
 }
 
 .hero p{
 
     color:var(--text-soft);
+    font-size:1.1rem;
 
 }
 
-/* -------------------------------- */
+/* -------------------------- */
 
 .section{
 
@@ -127,47 +129,51 @@ body{
 
 .section h2{
 
-    margin-bottom:18px;
+    margin-bottom:20px;
 
-    color:#dfe8f4;
+    color:#edf5ff;
+
+    font-size:1.7rem;
+
+    text-shadow:
+        0 0 10px rgba(150,190,255,.18);
 
 }
 
-/* -------------------------------- */
+/* -------------------------- */
+/* Grid */
+/* -------------------------- */
 
 .grid{
 
     display:flex;
-
     flex-wrap:wrap;
-
     justify-content:center;
-
-    gap:22px;
+    gap:24px;
 
 }
 
-/* -------------------------------- */
+/* -------------------------- */
+/* Cards */
+/* -------------------------- */
 
 .card{
 
     width:260px;
-
     height:230px;
 
     display:flex;
-
     flex-direction:column;
 
-    background:var(--card-bg);
+    padding:22px;
+
+    background:var(--card-bg-soft);
 
     border:1px solid var(--card-border);
 
-    backdrop-filter:blur(18px);
+    border-radius:22px;
 
-    border-radius:20px;
-
-    padding:22px;
+    backdrop-filter:blur(20px);
 
     transition:
         transform .25s ease,
@@ -178,40 +184,46 @@ body{
 
 .card:hover{
 
-    transform:translateY(-6px);
+    transform:
+        translateY(-8px);
 
-    border-color:rgba(235,245,255,.45);
+    border-color:
+        rgba(230,240,255,.45);
 
     box-shadow:
-        0 18px 40px rgba(0,0,0,.35);
+
+        0 18px 45px rgba(0,0,0,.42),
+
+        0 0 18px rgba(155,195,255,.16);
 
 }
 
 .icon{
 
-    font-size:2.4rem;
+    font-size:2.5rem;
 
 }
 
 .card h3{
 
-    margin:12px 0 8px;
+    margin-top:10px;
+    margin-bottom:10px;
 
 }
 
 .desc{
 
-    color:var(--text-soft);
-
     flex:1;
+
+    color:var(--text-soft);
 
     line-height:1.45;
 
 }
 
-.badge{
+/* -------------------------- */
 
-    display:inline-block;
+.badge{
 
     width:fit-content;
 
@@ -219,31 +231,42 @@ body{
 
     border-radius:999px;
 
-    background:rgba(255,255,255,.08);
+    background:
+        rgba(200,220,255,.10);
 
-    border:1px solid rgba(255,255,255,.12);
+    border:
+        1px solid rgba(220,235,255,.15);
 
-    color:#dfe8f4;
+    color:#dce8ff;
 
     font-size:.78rem;
 
+    margin-bottom:15px;
+
 }
 
-/* -------------------------------- */
+/* -------------------------- */
 
 .open{
 
-    margin-top:16px;
+    margin-top:auto;
+
+    display:block;
 
     text-align:center;
 
     text-decoration:none;
 
-    color:#243247;
+    color:#17304f;
 
-    background:var(--accent-color);
+    background:
 
-    padding:11px 18px;
+        linear-gradient(
+            #eef5ff,
+            #d2e2ff
+        );
+
+    padding:12px;
 
     border-radius:999px;
 
@@ -255,24 +278,62 @@ body{
 
 .open:hover{
 
-    background:var(--accent-hover);
+    background:
+
+        linear-gradient(
+            #ffffff,
+            #eef6ff
+        );
 
 }
 
-/* -------------------------------- */
+/* -------------------------- */
 
 .footer{
 
-    margin-top:50px;
+    margin-top:60px;
+
+    padding:25px;
 
     text-align:center;
 
-    padding:24px;
+}
+
+.footer code{
+
+    color:#dbe7ff;
 
 }
 
-code{
+/* -------------------------- */
+/* Responsive */
+/* -------------------------- */
 
-    color:#d8e7ff;
+@media (max-width:768px){
+
+    body{
+
+        padding:18px;
+
+    }
+
+    .hero{
+
+        padding:70px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .card{
+
+        width:100%;
+        max-width:320px;
+
+    }
 
 }
