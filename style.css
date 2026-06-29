@@ -399,17 +399,15 @@ body::after{
 
 }
 
-.card-image{
+.card-image img{
 
-    margin:
+    width:100%;
+    height:100%;
 
-        -22px
-        -22px
-        18px;
+    object-fit:cover;
+    object-position:center;
 
-    height:115px;
-
-    overflow:hidden;
+    display:block;
 
 }
 .card-image{
@@ -417,7 +415,17 @@ body::after{
     position:relative;
 
 }
-    
+    .card-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    object-position:center;
+
+    display:block;
+
+}
 .icon{
 
     position:absolute;
