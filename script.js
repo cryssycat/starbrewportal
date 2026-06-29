@@ -1,6 +1,7 @@
 const hubs = [
 {
  title:"StarHub",
+ image:"images/banner.png",
  icon:"⭐",
  category:"Characters",
  description:"Star's character collection.",
