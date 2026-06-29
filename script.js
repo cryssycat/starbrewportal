@@ -5,7 +5,7 @@ const hubs = [
  category:"Characters",
  description:"Main character profiles and galleries.",
  status:"Live",
- url:"#"
+ url:"https://characterhub.pages.dev/"
 },
 {
  title:"LunaHub",
@@ -13,7 +13,7 @@ const hubs = [
  category:"Characters",
  description:"Luna's character collection.",
  status:"Live",
- url:"#"
+ url:"https://lunabrew.pages.dev/"
 },
 {
  title:"SharedHub",
@@ -21,7 +21,7 @@ const hubs = [
  category:"Characters",
  description:"Shared StarBrew characters.",
  status:"Live",
- url:"#"
+ url:"https://starbrewshared.pages.dev/"
 },
 {
  title:"StarBrew Queue",
@@ -29,7 +29,7 @@ const hubs = [
  category:"Creative",
  description:"Commission progress tracker.",
  status:"Live",
- url:"#"
+ url:"https://starbrewart.pages.dev/"
 },
 {
  title:"StarSundae Commissions",
@@ -37,7 +37,7 @@ const hubs = [
  category:"Creative",
  description:"Commission information and request form.",
  status:"Live",
- url:"#"
+ url:"https://starsundae.pages.dev/#order"
 },
 {
  title:"Random Generators",
@@ -45,7 +45,7 @@ const hubs = [
  category:"Tools",
  description:"Creative generators for characters and ideas.",
  status:"Live",
- url:"#"
+ url:"https://starbrewgenerator.pages.dev/"
 },
 {
  title:"Hearthling Hub",
@@ -53,16 +53,8 @@ const hubs = [
  category:"World",
  description:"Browse Hearthlings and lore.",
  status:"Live",
- url:"#"
+ url:"https://hearthlings.pages.dev/"
 },
-{
- title:"Orphanage + Adoption Center",
- icon:"🏡",
- category:"World",
- description:"Browse available adopts and adoptions.",
- status:"Live",
- url:"#"
-}
 ];
 
 const container=document.getElementById("portal");
