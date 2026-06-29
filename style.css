@@ -205,3 +205,58 @@ code{color:#d8e6ff}
     max-width:320px;
   }
 }
+
+
+body{
+
+    position:relative;
+
+    background:#081123;
+
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+        url("images/banner.png")
+        center / cover
+        no-repeat;
+
+    opacity:.12;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+            #0a1327,
+            #12234a,
+            #09111f
+        );
+
+    opacity:.75;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
