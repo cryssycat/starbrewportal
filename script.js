@@ -32,7 +32,7 @@ const hubs = [
  url:"https://starbrewart.pages.dev/"
 },
 {
- title:"StarSundae Commissions",
+ title:"Star's Commissions",
  icon:"🍨",
  category:"Creative",
  description:"Commission info.",
