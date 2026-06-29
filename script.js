@@ -27,7 +27,7 @@ const hubs = [
  title:"StarBrew Queue",
  icon:"📋",
  category:"Creative",
- description:"",
+ description:"Track orders.",
  status:"Live",
  url:"https://starbrewart.pages.dev/"
 },
