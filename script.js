@@ -19,6 +19,7 @@ const hubs = [
 },
 {
  title:"SharedHub",
+ image:"images/sharedhub.png",
  icon:"🤝",
  category:"Characters",
  description:"Shared StarBrew characters.",
@@ -27,6 +28,7 @@ const hubs = [
 },
 {
  title:"StarBrew Queue",
+ image:"images/queue.png",
  icon:"📋",
  category:"Creative",
  description:"Track orders.",
@@ -35,6 +37,7 @@ const hubs = [
 },
 {
  title:"Star's Commissions",
+  image:"images/commissions.png",
  icon:"🍨",
  category:"Creative",
  description:"Commission info.",
@@ -44,6 +47,7 @@ const hubs = [
 {
  title:"Random Generators",
  icon:"🎲",
+  image:"images/generators.png",
  category:"Tools",
  description:"Creative generators.",
  status:"Live",
@@ -51,6 +55,7 @@ const hubs = [
 },
 {
  title:"Hearthling Hub",
+  image:"images/hearthlings.png",
  icon:"🧚",
  category:"World",
  description:"Browse Hearthlings.",
