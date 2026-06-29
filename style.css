@@ -81,3 +81,29 @@ code{color:#ffdca8}
     flex-wrap: wrap;
     gap: 20px;
 }
+
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+            rgba(28,24,44,.25),
+            rgba(28,24,44,.65)
+        ),
+
+        url("images/banner.png")
+
+        center/cover;
+
+    filter:saturate(120%);
+
+    z-index:0;
+
+}
