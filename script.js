@@ -3,7 +3,7 @@ const hubs = [
  title:"StarHub",
  icon:"⭐",
  category:"Characters",
- description:"Main character profiles and galleries.",
+ description:"Star's character collection.",
  status:"Live",
  url:"https://characterhub.pages.dev/"
 },
@@ -27,7 +27,7 @@ const hubs = [
  title:"StarBrew Queue",
  icon:"📋",
  category:"Creative",
- description:"Commission progress tracker.",
+ description:"",
  status:"Live",
  url:"https://starbrewart.pages.dev/"
 },
@@ -35,7 +35,7 @@ const hubs = [
  title:"StarSundae Commissions",
  icon:"🍨",
  category:"Creative",
- description:"Commission information and request form.",
+ description:"Commission info.",
  status:"Live",
  url:"https://starsundae.pages.dev/#order"
 },
@@ -43,7 +43,7 @@ const hubs = [
  title:"Random Generators",
  icon:"🎲",
  category:"Tools",
- description:"Creative generators for characters and ideas.",
+ description:"Creative generators.",
  status:"Live",
  url:"https://starbrewgenerator.pages.dev/"
 },
@@ -51,7 +51,7 @@ const hubs = [
  title:"Hearthling Hub",
  icon:"🧚",
  category:"World",
- description:"Browse Hearthlings and lore.",
+ description:"Browse Hearthlings.",
  status:"Live",
  url:"https://hearthlings.pages.dev/"
 },
